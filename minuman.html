@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRESH APPLE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<link rel="stylesheet" href="backhome.css">
+<link rel="stylesheet" href="charclass.css">
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="logu.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="daftarpembeli.html">Daftar Pembeli</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Produk
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="makanan.html">Makanan</a></li>
+                    <li><a class="dropdown-item" href="minuman.html">Minuman</a></li>
+                    </ul>
+                </li>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="sari buaru.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="cuka buaru.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="ciderbuaru.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="jusbuaru.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        
+      </nav>
+      
+      <div id="carouselExampleIndicators" class="carousel slide">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                <img src="sari apel.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sari Apel</h5>
+                  <p class="card-text"></p>
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-danger" onclick="updateQuantity('decrement', 'sari')">-</button>
+                    </span>
+                    <input type="text" id="quantity-sari" class="form-control" value="0" readonly>
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-success" onclick="updateQuantity('increment', 'sari')">+</button>
+                    </span>
+                    <div id="pesan" class="alert alert-success" role="alert" style="display: none;">
+                      Pesanan Anda Ditambahkan!
+                    </div>
+                </div>
+                <a href="#" class="btn btn-success" onclick="tambahPesanan()">Tambah</a>
+               </div>
+              </div>
+            </div>
+        
+          
+        
+            <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                <img src="cuka apel.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cuka Apel</h5>
+                  <p class="card-text"></p>
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-danger" onclick="updateQuantity('decrement', 'cuka')">-</button>
+                    </span>
+                    <input type="text" id="quantity-cuka" class="form-control" value="0" readonly>
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-success" onclick="updateQuantity('increment', 'cuka')">+</button>
+                    </span>
+                    <div id="pesan" class="alert alert-success" role="alert" style="display: none;">
+                      Pesanan Anda Ditambahkan!
+                    </div>
+                </div>
+                <a href="#" class="btn btn-success" onclick="tambahPesanan()">Tambah</a>
+               </div>
+              </div>
+            </div>
+        
+          
+        
+            <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                <img src="jus apel.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jus Apel</h5>
+                  <p class="card-text"></p>
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-danger" onclick="updateQuantity('decrement', 'jus')">-</button>
+                    </span>
+                    <input type="text" id="quantity-jus" class="form-control" value="0" readonly>
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-success" onclick="updateQuantity('increment', 'jus')">+</button>
+                    </span>
+                    <div id="pesan" class="alert alert-success" role="alert" style="display: none;">
+                      Pesanan Anda Ditambahkan!
+                    </div>
+                </div>
+                <a href="#" class="btn btn-success" onclick="tambahPesanan()">Tambah</a>
+               </div>
+              </div>
+            </div>
+        
+          
+        
+            <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                <img src="cider.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cider Apel</h5>
+                  <p class="card-text"></p>
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-danger" onclick="updateQuantity('decrement', 'cider')">-</button>
+                        </span>
+                        <input type="text" id="quantity-cider" class="form-control" value="0" readonly>
+                        <span class="input-group-btn">
+                          <button type="button" class="btn btn-success" onclick="updateQuantity('increment', 'cider')">+</button>
+                    </span>
+                    <div id="pesan" class="alert alert-success" role="alert" style="display: none;">
+                      Pesanan Anda Ditambahkan!
+                    </div>
+                </div>
+                <a href="#" class="btn btn-success" onclick="tambahPesanan()">Tambah</a>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <script>
+          function updateQuantity(operation, cardId) {
+    var quantityInput = document.getElementById("quantity-" + cardId);
+    var currentQuantity = parseInt(quantityInput.value);
+
+    if (operation === "increment" && currentQuantity < 10) {
+        quantityInput.value = currentQuantity + 1;
+    } else if (operation === "decrement" && currentQuantity > 1) {
+        quantityInput.value = currentQuantity - 1;
+    }
+}
+function tambahPesanan() {
+    var quantityInput = document.getElementById("quantity");
+    var pesanDiv = document.getElementById("pesan");
+    pesanDiv.style.display = "block";
+    quantityInput.value = 0;
+  }
+</script>
+        
+          
+          
+       
+        
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</form>
+</body>
+</html>

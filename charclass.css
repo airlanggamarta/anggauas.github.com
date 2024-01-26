@@ -1,0 +1,27 @@
+.pilihan{
+    color: white;
+    font-family: sans-serif;
+}
+h1{
+    color:white;
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 200%;
+    text-align: center;
+}
+.judulutama{
+    width: 50%;
+    margin: auto;
+    padding: 20 px;
+}
+.linkbelihomepage{
+    display: flex;
+    width: 30%;
+    font-family: 'Vina Sans', sans-serif;
+    color: rgb(51, 255, 0);
+    text-align: center;
+    align-items: bottom;
+    height: 200px;
+}
+.navbar{
+    height: 60px;
+}
